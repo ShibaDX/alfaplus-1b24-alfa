@@ -1,17 +1,25 @@
-    @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-body{
-    background-color: #f4f4f4;
-    font-family: "Roboto Mono", monospace;
+body {
+    background-color: #15151a;
+    font-family: "Roboto", sans-serif;
 }
 
 .suporte a {
     text-decoration: none;
-    color: #FF6600;
+    background: #FF6600;
+    padding: 20px;
+    border-radius: 30px;
+    color: #f4f4f4;
+}
+
+.suporte {
+    margin-top: 45px;
 }
 
 .logotipo img {
-    width: 200px;
+    /* width: 200px; */
+    height: 107px;
 }
 
 section {
@@ -25,4 +33,74 @@ header .logotipo {
 
 header .suporte {
     float: right;
+}
+
+.logotipo {
+    background-color: #f4f4f4;
+}
+
+.menuitem a {
+    text-decoration: none;
+    color: #FF6600;
+}
+
+.menuitem li {
+    display: inline-block;
+    padding: 40px 20px;
+    font-size: 30px;
+    transition: 0.2s;
+}
+
+.menu,
+.menuitem {
+    display: inline;
+}
+
+.menu {
+    margin: 0 50px;
+}
+
+.menuitem a:hover {
+    color: #ff8d40;
+    border-bottom: #FF6600 1px solid;
+    padding-bottom: 15px;
+    transition: 0.3s;
+}
+
+header {
+    border-bottom: 1px solid #562b0f;
+    z-index: 2;
+    position: relative;
+
+}
+
+.hover {
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.hover:hover {
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.slider {
+    background-image: url('../img/slider.png');
+    height: 1000px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: 1;
+    top: -145px;
+    position: relative;
+    opacity: 0.6;
+}
+
+h1 {
+    text-align: center;
+    top: 150px;
+    position: relative;
+    font-size: 30px;
+    color: #ff6600;
+    z-index: 3;
 }
