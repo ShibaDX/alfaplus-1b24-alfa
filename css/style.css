@@ -86,12 +86,12 @@ header {
 
 .slider {
     background-image: url('../img/slider.png');
-    height: 1000px;
+    height: 900px;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     z-index: 1;
-    top: -145px;
+    top: -165px;
     position: relative;
     opacity: 0.6;
 }
@@ -100,7 +100,122 @@ h1 {
     text-align: center;
     top: 150px;
     position: relative;
-    font-size: 30px;
+    font-size: 50px;
     color: #ff6600;
     z-index: 3;
+}
+
+.imagem img {
+    height: 250px; 
+}
+
+/* .titulo h2 {
+    font-size: 30px;
+}
+
+.titulo h2, .item {
+    justify-content: center;
+} */
+
+.destaques .item {
+    width: 15%;
+    display: inline-block;
+    margin: 0.5%;
+    position: relative;
+}
+
+.destaques .imagem img {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.destaques .titulo {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #f4f4f4;
+    position: absolute;
+    background-image: linear-gradient(to top,#000,#ffffff00);
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+.titulo-categoria {
+    color: #fff;
+    font-size: 22px;
+    text-align: center;
+    padding: 20px;
+    background: #3b3b3b;
+    margin: 20px 0;
+    border-radius: 15px;
+}
+
+.destaques {
+    text-align: center;
+}
+
+.destaques a {
+    text-decoration: none;
+}
+
+footer a {
+    text-decoration: none;
+    color: #FF6600;
+    font-size: 22px;
+}
+
+footer {
+    color: #FF6600;
+    background: #000;
+    padding: 50px 0;
+    text-align: center;
+    line-height: 40px;
+    margin-top: 50px;
+}
+
+.col {
+    width: 30%;
+    display: inline-block;
+}
+
+.sociais li {
+    display: inline-block;
+}
+
+footer i {
+    font-size: 40px;
+    padding: 5px;
+}
+
+.mostrar-mobile {
+    display: none;
+}
+
+.esconder-mobile {
+    display: block;
+}
+
+@media (max-width:480px) {
+    .mostrar-mobile {
+        display: block;
+    }
+    .esconder-mobile {
+        display: none;
+    }
+    section {
+        width: 100%;
+    }
+    .destaques .item {
+        width: 100%;
+    }
+    .destaques .imagem img {
+        height: auto;
+    }
+    .item {
+        max-width: 350px;
+    }
+    .destaques {
+        text-align: center;
+    }
 }
