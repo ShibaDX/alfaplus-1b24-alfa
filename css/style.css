@@ -94,6 +94,7 @@ header {
     top: -165px;
     position: relative;
     opacity: 0.6;
+    background-position: center;
 }
 
 h1 {
@@ -196,7 +197,11 @@ footer i {
     display: block;
 }
 
-@media (max-width:480px) {
+@media (max-width:979px) {
+    .col {
+        width: 100%;
+        margin-bottom: 30px;
+    }
     .mostrar-mobile {
         display: block;
     }
@@ -210,12 +215,71 @@ footer i {
         width: 100%;
     }
     .destaques .imagem img {
-        height: auto;
+        height: 480px;
     }
     .item {
         max-width: 350px;
+        padding: 10px 0;
     }
     .destaques {
         text-align: center;
+    }
+    .dropdown{
+        display: block;
+        padding: 10px;
+        text-align: center;
+        width: calc(100%-20px);
+        background-color: #15151a;
+    }
+    .dropdown a{
+        color: #fff;
+        line-height: 30px;
+        text-decoration: none;
+    }
+    .dropdown i{
+        font-size: 40px;
+        display: inline;
+        padding: 15px;
+        margin-top: 40px;
+        position: absolute;
+    }
+    .dropdown .dropdown-content{
+        display: none;
+    }
+    .dropdown:hover .dropdown-content{
+        display: block;
+    }
+    .menu-mobile img{
+        width: 150px;
+        background-color: #f4f4f4;
+    }
+    .slider {
+        top: -205px;
+    }
+    .fa-bars {
+        color: #f4f4f4;
+    }
+    .dropdown li {
+        padding: 10px;
+        font-size: 18px;
+    }
+    .destaques .titulo {
+        margin-bottom: 12px;
+    }
+
+}
+
+@media (min-width: 980px) and (max-width: 1199px) {
+    .menu-mobile {
+        display: none;
+    }
+    .esconder-mobile {
+        display: block;
+    }
+    .col {
+        width: 49%;
+    }
+    section {
+        width: 100%;
     }
 }
